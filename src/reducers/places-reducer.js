@@ -14,7 +14,7 @@ export default (state = initialState, action) => {
             };
         case GET_PLACES_SUCCESS:
             return {
-                places: action.places.map(place => new Place(place.id.toString(), place.title, place.image))
+                places: action.places.map(place => new Place(place.id.toString(), place.title, place.imageUri))
             };
         default:
             return state;
